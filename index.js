@@ -21,7 +21,7 @@ const runPrompt = async () => {
 		model: "text-davinci-003",
 		prompt: prompt,
 		max_tokens: 2048,
-		temperature: 1,
+		temperature: 0,
 	});
 
 	const parsableJSONresponse = response.data.choices[0].text;
